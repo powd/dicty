@@ -10,6 +10,7 @@
   "workspaces": [
     "shared/misc",
     "shared/testing",
+    "modules/app.next",
     "modules/suggestions.be",
     "modules/suggestions.nest",
     "modules/suggestions.express",

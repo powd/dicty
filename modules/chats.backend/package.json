@@ -1,7 +1,7 @@
 {
   "name": "dicty-chats-backend",
   "version": "1.0.0",
-  "description": "Dicty suggestions backend module",
+  "description": "Dicty chats backend module",
   "main": "index.js",
   "prisma": {
     "schema": "prisma.vendor/schema.prisma"
@@ -12,6 +12,7 @@
     "db": "PGPASSWORD=postgres PGOPTIONS=\"--search_path=chats.backend\" psql -U postgres -d dicty -h localhost"
   },
   "devDependencies": {
-    "prisma": "^4.5.0"
+    "prisma": "^4.5.0",
+    "tsconfig-paths": "^4.1.0"
   }
 }

@@ -9,6 +9,11 @@ Learn vocabulary and read books with ease!
     - Different `package.json` fles, projects are truly independent and "draggable out"
   - Simple _npm workspaces_ feature used
     - Sticking to the "core" solutions should ensure stability (hopefully) and simplicity (nx monorepos look cool, but they seem to add more complexity and require steeper learning curve)
+    - Also solves other two practical problems:
+      1. If the main `package.json` was not used, the imports within modules, going outside their directories (`../`) would not be possible due to npm limitations (even with _symlinks_). Hence, "inverting" frameworks to libraries also would not be possible (business code would have to live inside the framework code).
+      - For the deployment process, an app bundle can be generated from the framework directory, even if it imports file above!
+      - We can add many framework directories, switch between them, and generate bundles like that (express, nest, next, etc)!
+      2. TODO: What was it?
 - Contrived directory structure for the sake of this
   - Keep as low levels as possible
   - Ugly naming, but (time will tell) pragmatism-oriented
@@ -34,14 +39,13 @@ Learn vocabulary and read books with ease!
 Modules:
 
 - Suggestions:
-  - [Suggestions Backend](./modules/suggestions.be/README.md)
-  - [Suggestions Frontend](./modules/suggestions.fe/README.md)
-  - [Suggestions NestJS](./modules/suggestions.nest/README.md)
-  - [Suggestions Next.js](./modules/suggestions.next/README.md)
+  - [Chats Backend](./modules/chats.backend/README.md)
+  - [Suggestions Backend](./modules/suggestions.backend/README.md)
+  - [Suggestions Frontend](./modules/suggestions.frontend/README.md)
 - Users:
   - ... (TODO: Maybe add in the future)
 
 Shared:
 
-- [Suggestions Backend](./shared/misc/README.md)
-- [Suggestions Frontend](./shared/testing/README.md)
+- [Common](./shared/common/README.md)
+- [Testing](./shared/testing/README.md)

@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "workspaces": [
-    "shared/misc",
+    "shared/common",
     "shared/testing",
     "modules/app.next",
     "modules/chats.backend",

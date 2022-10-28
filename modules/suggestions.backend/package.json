@@ -12,7 +12,8 @@
     "schema": "prisma.vendor/schema.prisma"
   },
   "devDependencies": {
-    "prisma": "^4.5.0"
+    "prisma": "^4.5.0",
+    "tsconfig-paths": "^4.1.0"
   },
   "dependencies": {
     "@prisma/client": "^4.5.0"

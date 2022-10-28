@@ -11,11 +11,9 @@
     "shared/misc",
     "shared/testing",
     "modules/app.next",
-    "modules/suggestions.be",
-    "modules/suggestions.nest",
-    "modules/suggestions.express",
-    "modules/suggestions.fe",
-    "modules/suggestions.next"
+    "modules/chats.backend",
+    "modules/suggestions.backend",
+    "modules/suggestions.frontend"
   ],
   "devDependencies": {
     "@types/jest": "^29.0.1",

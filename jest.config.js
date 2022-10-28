@@ -1,3 +1,3 @@
 module.exports = {
-  projects: ['modules/suggestions.be/jest.config.js', 'modules/suggestions.fe/jest.config.js'],
+  projects: ['modules/chats.backend/jest.config.js', 'modules/suggestions.backend/jest.config.js', 'modules/suggestions.frontend/jest.config.js'],
 };

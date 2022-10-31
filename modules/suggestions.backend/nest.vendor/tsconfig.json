@@ -1,4 +1,5 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "jsx": "react",
     "module": "commonjs",
@@ -19,7 +20,9 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@module/*": ["./../src/*"]
+      "@module/*": ["./../src/*"],
+      "@modules/*": ["./../../../modules/*"],
+      "@shared/*": ["./../../../shared/*"]
     }
   }
 }

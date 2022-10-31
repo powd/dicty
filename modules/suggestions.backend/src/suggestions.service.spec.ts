@@ -6,7 +6,7 @@ describe('Suggestion Service', () => {
     const service = new SuggestionsService();
 
     // When
-    const result = await service.findMany(); //?
+    const result = await service.findMany();
 
     // Then
     expect(result.length).toBeGreaterThan(0);

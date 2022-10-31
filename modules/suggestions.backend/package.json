@@ -8,6 +8,9 @@
     "test": "jest",
     "db": "PGPASSWORD=postgres PGOPTIONS=\"--search_path=suggestions.backend\" psql -U postgres -d dicty -h localhost"
   },
+  "workspaces": [
+    "nest.vendor"
+  ],
   "prisma": {
     "schema": "prisma.vendor/schema.prisma"
   },

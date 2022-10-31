@@ -1,10 +1,5 @@
 import { generateId, Injectable } from '@shared/common';
-
-interface Suggestion {
-  id: string;
-  title: string;
-  suggestionsCount: number;
-}
+import { Suggestion } from './suggestion';
 
 @Injectable()
 export class SuggestionsService {

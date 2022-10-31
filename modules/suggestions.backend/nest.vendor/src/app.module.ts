@@ -1,19 +1,6 @@
-import { Controller, Get, Module } from '@nestjs/common';
-import { UsersModule } from '@/modules/users';
-import * as _ from 'lodash';
-
-@Controller('app')
-class AppController {
-  @Get('lodash/version')
-  findLodashVersion() {
-    return {
-      lodashVersion: _.VERSION,
-    };
-  }
-}
-
+import { Module } from '@nestjs/common';
+import { SuggestionsModule } from '@module/nest';
 @Module({
-  controllers: [AppController],
-  imports: [UsersModule],
+  imports: [SuggestionsModule],
 })
 export class AppModule {}
